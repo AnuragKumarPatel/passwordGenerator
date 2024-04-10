@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<div class="conrainer">
+    <h1>Password Generator</h1>
+    <div class="display-container">
+        <input readonly placeholder="password" class="display" data-passworddisplay>
+        <button data-copy class="copybtn">
+            <span data-copyMsg></span>
+            <img src="./assets/copy.svg" alt="copy" width="23" height="23" >
+        </button>
+    </div>
+<div class="input-container">
+
+    <div class="length-container">
+    <p>Password Length</p>
+    <p data-lengthNumber>0</p>
+</div>
+<!-- slider -->
+<input type="range" min="1" max="20" class="slider" step="1" deta-lengthSlider>
+<!-- cheak boxex -->
+<div class="cheak"> 
+    <input type="checkbox"  id="uppercase">
+    <label for="uppercase">Include upper case latter</label>
+</div>
+<div class="cheak">
+    <input type="checkbox"  id="lowercase">
+    <label for="lowercase">lowercase lowercase latter</label>
+</div>
+<div class="cheak">
+    <input type="checkbox"  id="numbers">
+    <label for="numbers">Include number latter</label>
+</div>
+<div class="cheak">
+    <input type="checkbox"  id="symbols">
+    <label for="symbols">Include Symbols latter</label>
+</div>
+<!-- strangth section -->
+<div class="strangth-container">
+    <p>Strength</p>
+    <div data-indicator></div>
+
+</div>
+<!-- Generate password -->
+<button id="generateButton">Generate Password</button>
+</div>
+</div>
+<script src="script1.js"></script> 
+</body>
+</html>
